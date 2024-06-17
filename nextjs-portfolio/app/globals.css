@@ -2,32 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+	:root {
+		--text-50: #eefbe9;
+		--text-100: #def8d3;
+		--text-200: #bcf0a8;
+		--text-300: #9be97c;
+		--text-400: #7ae151;
+		--text-500: #58da25;
+		--text-600: #47ae1e;
+		--text-700: #358316;
+		--text-800: #23570f;
+		--text-900: #122c07;
+		--text-950: #091604;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+		--background-50: #ecf0f8;
+		--background-100: #dae1f1;
+		--background-200: #b5c3e3;
+		--background-300: #8fa4d6;
+		--background-400: #6a86c8;
+		--background-500: #4568ba;
+		--background-600: #375395;
+		--background-700: #293e70;
+		--background-800: #1c2a4a;
+		--background-900: #0e1525;
+		--background-950: #070a13;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+		--primary-50: #f1f7ed;
+		--primary-100: #e2f0db;
+		--primary-200: #c5e1b7;
+		--primary-300: #a8d293;
+		--primary-400: #8bc36f;
+		--primary-500: #6eb44b;
+		--primary-600: #58903c;
+		--primary-700: #426c2d;
+		--primary-800: #2c481e;
+		--primary-900: #16240f;
+		--primary-950: #0b1208;
+
+		--secondary-50: #edf7f7;
+		--secondary-100: #dbf0f0;
+		--secondary-200: #b7e1e1;
+		--secondary-300: #93d2d2;
+		--secondary-400: #6fc3c3;
+		--secondary-500: #4bb4b4;
+		--secondary-600: #3c9090;
+		--secondary-700: #2d6c6c;
+		--secondary-800: #1e4848;
+		--secondary-900: #0f2424;
+		--secondary-950: #081212;
+
+		--accent-50: #edf3f7;
+		--accent-100: #dbe7f0;
+		--accent-200: #b7cee1;
+		--accent-300: #93b6d2;
+		--accent-400: #6f9dc3;
+		--accent-500: #4b85b4;
+		--accent-600: #3c6a90;
+		--accent-700: #2d506c;
+		--accent-800: #1e3548;
+		--accent-900: #0f1b24;
+		--accent-950: #080d12;
+	}
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }

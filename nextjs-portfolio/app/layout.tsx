@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 		],
 	},
 	twitter: {},
-  
 };
 
 export default function RootLayout({
@@ -31,8 +30,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+		<html lang='en' className='scroll-smooth'>
+			<body className={`${inter.className} bg-background-900 text-text-50`}>{children}</body>
 		</html>
 	);
 }
