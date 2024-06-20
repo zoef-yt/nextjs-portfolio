@@ -3,16 +3,16 @@ import { Header } from '@/components/Header';
 import { Section } from '@/components/Section';
 
 export default function Home() {
-	const jsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'Product',
-		name: 'product.name',
-		image: 'product.image',
-		description: 'product.description',
-	};
+	// const jsonLd = {
+	// 	'@context': 'https://schema.org',
+	// 	'@type': 'Product',
+	// 	name: 'product.name',
+	// 	image: 'product.image',
+	// 	description: 'product.description',
+	// };
 	return (
 		<div className='mx-auto min-h-screen max-w-screen-xl px-6 font-sans md:px-12 lg:px-24 lg:py-0 bg-background'>
-			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+{/* 			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /> */}
 			<div className='lg:flex lg:justify-between lg:gap-4'>
 				<Header />
 				<main className='flex-1'>
