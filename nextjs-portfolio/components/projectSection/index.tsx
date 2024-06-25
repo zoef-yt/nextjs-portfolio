@@ -78,11 +78,11 @@ function ProjectTile({ name, description, link, githubLink, imgURL, className = 
 			>
 				{name}
 			</a>
-			<p className='text-accent-300'>{description}</p>
+			<p className='text-accent-300 text-xs md:text-base'>{description}</p>
 			<div className='w-full flex gap-3 mt-4'>
 				<a
 					href={githubLink}
-					className='text-accent-300 hover:underline flex-1 flex items-center justify-center gap-2 px-6 py-2 bg-accent-500 rounded-md shadow-md hover:bg-accent-400 text-white text-base md:text-lg'
+					className='text-accent-300 hover:underline flex-1 flex items-center justify-center gap-2 py-2 bg-accent-500 rounded-md shadow-md hover:bg-accent-400 text-white text-base md:text-lg'
 					target='_blank'
 					rel='noopener noreferrer'
 					aria-label={`${name} GitHub`}
@@ -91,8 +91,12 @@ function ProjectTile({ name, description, link, githubLink, imgURL, className = 
 					View Code <GitHubIcon size={24} />
 				</a>
 
-				<LinkPreview imageSrc={imgURL} url={link} className='flex-1 text-center w-full flex justify-center items-center text-lg'>
-					Live Demo
+				<LinkPreview
+					imageSrc={imgURL}
+					url={link}
+					className='flex-1 text-center w-full flex justify-center items-center text-lg text-teal-200 hover:underline'
+				>
+					<p className='text-teal-200'>Live Demo</p>
 				</LinkPreview>
 			</div>
 		</div>

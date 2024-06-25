@@ -49,7 +49,7 @@ export function Header() {
 					</Link>
 				</div>
 			</div>
-			<a href='#About' className='mt-auto'>
+			<a href='#About' className='mt-auto mb-11 md:mb-0'>
 				<p className='text-center text-3xl flex gap-4 justify-center items-center lg:hidden'>
 					<ChevronDownIcon color='white' /> About Me <ChevronDownIcon color='white' />
 				</p>

@@ -103,14 +103,10 @@ export default function Home() {
 			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 			<div className='lg:flex lg:justify-between lg:gap-4'>
 				<Header />
-				<main className='lg:w-1/2 '>
+				<main className='lg:w-1/2'>
 					<About />
-					<div>
-						<ExperienceSection />
-					</div>
-					<div>
-						<ProjectSection />
-					</div>
+					<ExperienceSection />
+					<ProjectSection />
 				</main>
 			</div>
 		</div>

@@ -38,7 +38,7 @@ export function About() {
 				Today, I focus on building web applications that are both performant and accessible. I enjoy experimenting with new programming
 				languages and playing video games.
 			</span>
-			<a href='#Experience' className='mt-auto text-center text-3xl flex gap-4 justify-center items-center'>
+			<a href='#Experience' className='mt-auto text-center text-3xl flex gap-4 justify-center items-center mb-10 md:mb-0'>
 				<ChevronDownIcon color='white' /> Experience <ChevronDownIcon color='white' />
 			</a>
 		</Section>
