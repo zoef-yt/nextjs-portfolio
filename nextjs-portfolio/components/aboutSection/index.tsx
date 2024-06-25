@@ -5,6 +5,9 @@ import { ChevronDownIcon } from '../svg/chevronDown';
 export function About() {
 	return (
 		<Section id='About' className='lg:py-24 py-12 flex flex-col px-1'>
+			<h2 id={`About-heading`} className='lg:sr-only text-3xl font-bold text-center mb-9'>
+				About
+			</h2>
 			<span className='mb-7'>
 				My journey into the world of development began with my love for video games. Fascinated by how games like{' '}
 				<LinkPreview url='https://www.minecraft.net' imageSrc='/minecraft.webp' isExternal>

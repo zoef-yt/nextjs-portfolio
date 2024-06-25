@@ -52,13 +52,19 @@ export const LinkPreview = ({ children, url, className, width = 200, height = 12
 			previewRef.current.style.left = `${newX}px`;
 			previewRef.current.style.top = `${newY}px`;
 		}
+		return () => {
+			if (previewRef.current) {
+				previewRef.current.style.left = '';
+				previewRef.current.style.top = '';
+			}
+		};
 	}, [hoverPosition]);
 
 	const handleFocus = () => {
 		if (linkRef.current) {
 			const rect = linkRef.current.getBoundingClientRect();
 			const x = rect.right + 15;
-			const y = rect.top + window.scrollY + 15;
+			const y = rect.top + 15;
 			setHoverPosition({ x, y });
 			setOpen(true);
 		}
@@ -71,7 +77,7 @@ export const LinkPreview = ({ children, url, className, width = 200, height = 12
 			<span className={`relative ${className}`}>
 				<Link
 					href={url}
-					className='text-background-500  font-bold no-underline'
+					className='text-background-500 font-bold no-underline'
 					onMouseEnter={() => setOpen(true)}
 					onMouseLeave={() => setOpen(false)}
 					onMouseMove={handleMouseMove}
@@ -103,9 +109,9 @@ export const LinkPreview = ({ children, url, className, width = 200, height = 12
 							width={width}
 							height={height}
 							quality={quality}
-							priority={true}
 							className='rounded-lg'
 							alt='Preview image'
+							loading='lazy'
 						/>
 					</span>
 				</span>

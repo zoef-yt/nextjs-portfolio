@@ -2,6 +2,10 @@ import Link from 'next/link';
 
 import { ChevronDownIcon } from '../svg/chevronDown';
 import { ExternalLinkIcon } from '../svg/externalLink';
+import { LinkedInIcon } from '../svg/linkedIn';
+import { GitHubIcon } from '../svg/github';
+import { PeerlistSVG } from '../svg/peerlistSVG';
+import { TwitterIcon } from '../svg/twitter';
 
 export function Header() {
 	return (
@@ -14,22 +18,34 @@ export function Header() {
 				<p className='mt-6 max-w-xs leading-normal text-accent-300'>
 					Transforming complex problems into elegant, scalable, and high-performance digital solutions.
 				</p>
-
 				<div className='mt-10 flex gap-7 items-center'>
 					<Link
 						href='mailto:shaikhzoef36@gmail.com'
-						className='px-6 py-2 mt-6 text-lg font-semibold text-white bg-accent-500 rounded-md shadow-md hover:bg-accent-400 dark:hover:bg-accent-600'
+						className='px-6 py-2 mt-6 text-lg font-semibold text-white bg-accent-500 rounded-md shadow-md hover:bg-accent-400'
 					>
 						Contact Me
 					</Link>
-
 					<Link
 						href='/resume.pdf'
-						className='mt-6 text-accent-300 hover:text-accent-500 dark:hover:text-accent-400 flex gap-1 items-center justify-center'
+						className='mt-6 text-teal-200 flex gap-1 items-center justify-center [&:hover_.icon]:animate-bounce hover:underline'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
-						Resume <ExternalLinkIcon size={16} />
+						Resume <ExternalLinkIcon size={18} className='icon' />
+					</Link>
+				</div>
+				<div className='flex gap-6 mt-10'>
+					<Link href='https://www.linkedin.com/in/zoef-shaikh/' target='_blank' rel='noopener noreferrer' aria-label='LinkedIn'>
+						<LinkedInIcon size={24} color='white' />
+					</Link>
+					<Link href='https://github.com/zoef-yt/' target='_blank' rel='noopener noreferrer' aria-label='GitHub'>
+						<GitHubIcon size={24} color='white' />
+					</Link>
+					<Link href='https://peerlist.io/zoefshaikh/' target='_blank' rel='noopener noreferrer' aria-label='Peerlist'>
+						<PeerlistSVG size={24} color='white' />
+					</Link>
+					<Link href='https://twitter.com/zoef_yt/' target='_blank' rel='noopener noreferrer' aria-label='Twitter'>
+						<TwitterIcon size={24} color='white' />
 					</Link>
 				</div>
 			</div>

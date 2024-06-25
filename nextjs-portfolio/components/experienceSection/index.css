@@ -1,0 +1,23 @@
+.experience-line {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	bottom: 0;
+	width: 3px;
+	background: linear-gradient(to bottom, rgba(14, 21, 37, 0), rgba(14, 21, 37, 0.5) 3%, white 50%, rgba(14, 21, 37, 0.5) 97%, rgba(14, 21, 37, 0));
+}
+
+.experience-tile-line::after {
+	content: '';
+	position: absolute;
+	top: 10%;
+	left: 3px;
+	right: calc(100% - 2.1rem);
+	height: 2px;
+	background: linear-gradient(to right, white 0%, white 50%, rgba(255, 255, 255, 0) 100%);
+	transform: translateY(-50%);
+}
+
+.experience-tile-line:hover .icon {
+	display: block;
+}
