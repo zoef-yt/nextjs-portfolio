@@ -12,7 +12,7 @@ export default function Home() {
 	// };
 	return (
 		<div className='min-h-screen bg-background flex flex-col items-center justify-center'>
-			<h1 class='text-white'>Work in progress</h1>
+			<h1 className='text-white'>Work in progress</h1>
 		</div>
 		// <div className='mx-auto min-h-screen max-w-screen-xl px-6 font-sans md:px-12 lg:px-24 lg:py-0 bg-background'>
 		// <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /> 
