@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://zoef.dev'),
-	title: 'Zoef Shaikh',
+	title: 'Zoef Shaikh - Full Stack Developer | Portfolio',
 	description:
 		'Zoef Shaikh is a software engineer specializing in full-stack development, known for improving web performance and creating scalable digital solutions.',
 	keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 		'MongoDB',
 	],
 	openGraph: {
-		title: 'Zoef Shaikh',
+		title: 'Zoef Shaikh - Full Stack Developer | Portfolio',
 		description: 'Crafting visually stunning, scalable, and high-performance digital pages.',
 		url: 'https://zoef.dev',
 		siteName: 'Zoef Shaikh',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Zoef Shaikh',
+		title: 'Zoef Shaikh - Full Stack Developer | Portfolio',
 		description: 'Crafting visually stunning, scalable, and high-performance digital pages.',
 		images: [
 			{
@@ -55,6 +55,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 			<link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
 			<link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
 			<link rel='manifest' href='/site.webmanifest' />
+			<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 			<body className={`${inter.className} bg-background-900 text-text-50`}>{children}</body>
 		</html>
 	);
