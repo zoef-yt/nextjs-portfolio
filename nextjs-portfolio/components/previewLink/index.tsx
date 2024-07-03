@@ -77,7 +77,7 @@ export const LinkPreview = ({ children, url, className, width = 200, height = 12
 			<span className={`relative ${className}`}>
 				<Link
 					href={url}
-					className='text-background-500 font-bold no-underline'
+					className='text-[#769fff] font-bold no-underline'
 					onMouseEnter={() => setOpen(true)}
 					onMouseLeave={() => setOpen(false)}
 					onMouseMove={handleMouseMove}

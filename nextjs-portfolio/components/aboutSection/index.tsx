@@ -5,10 +5,10 @@ import { ChevronDownIcon } from '../svg/chevronDown';
 export function About() {
 	return (
 		<Section id='About' className='lg:py-24 py-12 flex flex-col px-1'>
-			<h2 id={`About-heading`} className='lg:sr-only text-3xl font-bold text-center mb-9'>
+			<h2 id='About-heading' className='lg:sr-only text-3xl font-bold text-center mb-9'>
 				About
 			</h2>
-			<span className='mb-7'>
+			<p className='mb-7'>
 				My journey into the world of development began with my love for video games. Fascinated by how games like{' '}
 				<LinkPreview url='https://www.minecraft.net' imageSrc='/minecraft.webp' isExternal>
 					Minecraft
@@ -18,8 +18,8 @@ export function About() {
 					Unity
 				</LinkPreview>{' '}
 				to create my first mobile game. However, hardware limitations led me to pivot towards app development.
-			</span>
-			<span className='mb-7'>
+			</p>
+			<p className='mb-7'>
 				I explored mobile app development with{' '}
 				<LinkPreview url='https://flutter.dev' imageSrc='/flutter.webp'>
 					Flutter
@@ -33,12 +33,16 @@ export function About() {
 					Next.js
 				</LinkPreview>
 				, and other modern web technologies.
-			</span>
-			<span className='mb-auto'>
+			</p>
+			<p className='mb-auto'>
 				Today, I focus on building web applications that are both performant and accessible. I enjoy experimenting with new programming
 				languages and playing video games.
-			</span>
-			<a href='#Experience' className='mt-auto text-center text-3xl flex gap-4 justify-center items-center mb-10 md:mb-0'>
+			</p>
+			<a
+				href='#Experience'
+				className='mt-auto text-center text-3xl flex gap-4 justify-center items-center mb-10 md:mb-0'
+				aria-label='Scroll to Experience section'
+			>
 				<ChevronDownIcon color='white' /> Experience <ChevronDownIcon color='white' />
 			</a>
 		</Section>
