@@ -11,9 +11,7 @@ export function Header() {
 	return (
 		<header className='sticky top-0 flex min-h-screen max-h-screen lg:w-1/2 flex-col justify-between lg:py-24 py-12 sm:py-6' role='banner'>
 			<div>
-				<h1 className='text-6xl font-bold tracking-tight text-slate-200 sm:text-5xl'>
-					<Link href='/'>Zoef Shaikh</Link>
-				</h1>
+				<h1 className='text-6xl font-bold tracking-tight text-slate-200 sm:text-5xl'>Zoef Shaikh</h1>
 				<h2 className='mt-4 text-2xl font-medium tracking-tight text-slate-200 sm:text-xl'>Full-Stack Developer</h2>
 				<p className='mt-6 max-w-xs leading-normal text-accent-300'>
 					Transforming complex problems into elegant, scalable, and high-performance digital solutions.
@@ -21,7 +19,7 @@ export function Header() {
 				<div className='mt-10 flex gap-7 items-center'>
 					<Link
 						href='mailto:shaikhzoef36@gmail.com'
-						className='px-6 py-2 mt-6 text-lg font-semibold text-white bg-accent-500 rounded-md shadow-md hover:bg-accent-400'
+						className='px-6 py-2 mt-6 text-lg font-semibold text-[#FFFFFF] bg-accent-500 rounded-md shadow-md hover:bg-accent-400'
 					>
 						Contact Me
 					</Link>
@@ -49,7 +47,7 @@ export function Header() {
 					</Link>
 				</div>
 			</div>
-			<a href='#About' className='mt-auto mb-11 md:mb-0'>
+			<a href='#About' className='mt-auto mb-11 md:mb-0' aria-label='Scroll to About Me section'>
 				<p className='text-center text-3xl flex gap-4 justify-center items-center lg:hidden'>
 					<ChevronDownIcon color='white' /> About Me <ChevronDownIcon color='white' />
 				</p>

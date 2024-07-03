@@ -56,7 +56,11 @@ export const ExperienceSection = () => {
 					);
 				})}
 			</div>
-			<a href='#Projects' className='mt-auto text-3xl flex gap-4 justify-center items-center mb-10 md:mb-0'>
+			<a
+				href='#Projects'
+				className='mt-auto text-3xl flex gap-4 justify-center items-center mb-10 md:mb-0'
+				aria-label='Scroll to Projects section'
+			>
 				<ChevronDownIcon color='white' />
 				Projects
 				<ChevronDownIcon color='white' />
