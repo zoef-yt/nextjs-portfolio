@@ -1,3 +1,20 @@
 User-agent: *
 Allow: /
+
+# Disallow specific images
+Disallow: /android-chrome-192x192.png
+Disallow: /android-chrome-512x512.png
+Disallow: /apple-touch-icon.png
+Disallow: /favicon-16x16.png
+Disallow: /favicon-32x32.png
+Disallow: /favicon.ico
+Disallow: /flutter.webp
+Disallow: /game-plex.png
+Disallow: /gamers-connect.png
+Disallow: /minecraft.webp
+Disallow: /need-games.png
+Disallow: /nextjs.webp
+Disallow: /react.webp
+Disallow: /unity.webp
+
 Sitemap: https://zoef.dev/sitemap.xml
