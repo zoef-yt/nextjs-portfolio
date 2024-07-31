@@ -116,7 +116,7 @@ export default function Home() {
 	};
 
 	return (
-		<div className='mx-auto min-h-screen max-w-screen-xl px-6 font-sans md:px-12 lg:px-24 lg:py-0'>
+		<div className='mx-auto min-h-dvh max-w-screen-xl px-6 font-sans md:px-12 lg:px-24 lg:py-0'>
 			<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 			<div className='lg:flex lg:justify-between lg:gap-4'>
 				<Header />
